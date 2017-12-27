@@ -3,7 +3,8 @@
 <head>
 <title>Login Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="regis.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="login.css">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
 <table align="center">
 
 <tr>
-<td colspan=2><center><font size=4><b>Login</b></font></center></td>
+<td colspan=2><center><font size=4><b>LOGIN</b></font></center></td>
 </tr>
 
 <tr>
@@ -51,7 +52,7 @@ if(!$con)
 {
     die('Connection Failed'.mysqli_error($con));
 }
-else{ echo"connected to server\n";}
+else { echo"connected to server\n";}
 
 $email = $_POST['userid'];
 $pass = $_POST['pwd'];

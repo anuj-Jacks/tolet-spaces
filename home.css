@@ -6,7 +6,6 @@ body{
 	padding:0px;
 }
 header{
-	height:5%;
 	width:100%;
 	background-color:black;
 }	
@@ -23,8 +22,6 @@ h2{
 
 a:link {
 	float:right;
-	margin-right:40px;
-	margin-top:-40px;
 	font-size:30px;
     color: #ffff00; 
     background-color: transparent; 
@@ -46,15 +43,25 @@ a:hover {
 	width:350px;
 	}
 #buy{
+	margin-top:2px;
 	height:150px;
 	width:350px;
 }
 #sell{
-height:150px;
+	margin-top:2px;
+	margin-bottom:2px;
+	height:150px;
 	width:350px;
-}
+	
+	}
 footer{
 	background-color:black;
-	height:2%;
 	color:#ffff00;
+	margin-top:-15px;
+}
+#map{
+	margin:15px;
+	width:200px;
+	height:200px;
+	background:yellow;
 }
