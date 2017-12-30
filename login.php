@@ -13,22 +13,22 @@
 <table align="center">
 
 <tr>
-<td colspan=2><center><font size=4><b>LOGIN</b></font></center></td>
+<td colspan="2"><font size=4><center><b>LOGIN</b></center></font></td>
 </tr>
 
 <tr>
-<td>Username:</td>
-<td><input type="text" size="25" name="userid"></td>
+<td>Email:</td>
+<td><input type="text" placeholder="Enter Email" name="userid"></td>
 </tr>
 
 <tr>
 <td>Password:</td>
-<td><input type="Password" size="25" name="pwd"></td>
+<td><input type="Password"  placeholder="Password" name="pwd"></td>
 </tr>
 
 <tr>
-<td ><input type="Reset"></td>
-<td><input id="button" type="submit" value="Login"></td>
+<td ><input type="Reset" class="button"></td>
+<td><input class="button" type="submit" value="Login"></td>
 </tr>
 
 </table>
