@@ -67,6 +67,7 @@
       
       if( mysqli_insert_id( $con ) ){
         echo "Updated data successfully\n";
+		header("Location: home.php"); 
       }
     }
     mysqli_close($con);

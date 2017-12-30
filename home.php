@@ -28,7 +28,6 @@
 <body>
 <header>
 <nav>
-  <a href= "login.php">Login</a>
   <a href= "login.php">hindi</a>
  </nav>
 <div>
@@ -48,12 +47,17 @@
 <footer>
 <div class="footcontainer">
 <div id="map">
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqkutp8CscYXwHurR6Jl9DQ8U1COUpLbE&callback=myMap"></script></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqkutp8CscYXwHurR6Jl9DQ8U1COUpLbE&callback=myMap"></script>
+
+</div>
+<a href= "login.php">Login</a>
 <h6>All rights reserved. &#169; copyright 2017 @To-let spaces</h6>
 </div>
 </footer>
 
 </body>
 
-
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.min.js"></script>
 </html>

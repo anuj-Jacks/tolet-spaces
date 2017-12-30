@@ -56,15 +56,18 @@ else { echo"connected to server\n";}
 
 $email = $_POST['userid'];
 $pass = $_POST['pwd'];
+$blank = "";
 if( isset( $email )&& isset($pass)){
 $query= "SELECT Username, password FROM admin WHERE Username = '$email'";
 $result = mysqli_query($con, $query);
 
 $row = mysqli_fetch_array($result);
 
-if($row["Username"]==$email && $row["password"]==$pass)
+if($row["Username"]==$email && $row["password"]==$pass && $row["Username"]==!$blank)
 {
     echo"You are a validated user.";
+	$_SESSION["userid1"] = $id1;
+header("Location: home.php"); // redirects
 }
 else
     echo"Sorry, your credentials are not valid, Please try again.";
