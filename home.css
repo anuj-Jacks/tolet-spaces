@@ -11,17 +11,19 @@ header{
 	background-color:black;
 }	
 #logoimg{
-	height:120px;
-	width:250px;
+	height:140px;
+	width:350px;
 }
 h2{
 	color:#ffd900;
+	margin-left:-50px;
 	text-align:center;
 }
 
 nav a:link {
 	float:right;
 	font-size:30px;
+	margin-right:15px;
     color: #ffd900;
    
 }
@@ -62,4 +64,15 @@ footer{
 	width:200px;
 	height:200px;
 	background:yellow;
+}
+footer div a:link {
+	float:right;
+	font-size:30px;
+	margin-right:15px;
+    color: #ffd900;
+   
+}
+
+footer div a:hover {
+    color: red;
 }
