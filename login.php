@@ -27,7 +27,7 @@
 </tr>
 
 <tr>
-<td ><input type="Reset" class="button"></td>
+<td ><input type="button" value="Forget Password?" class="forget"></td>
 <td><input class="button" type="submit" value="Login"></td>
 </tr>
 

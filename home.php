@@ -21,6 +21,13 @@
         });
       }
     </script>
+	<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
 
 </head>
 
@@ -39,7 +46,21 @@
 </header>
  
 <section>
-<div class="rent"><center><img src="image/rent.jpg" alt="rent" id="rent"></center></div>
+<div class="popup" onclick="myFunction()"><center><img src="image/rent.jpg" alt="rent" id="rent"></center>
+
+  <table class="popuptext" id="myPopup">
+  <tr>
+  <td><a href="resi.php">Residential</a></td>
+  <td><a href="resi.php">Commercial</a></td>
+  </tr>
+  <tr>
+  <td><a href="resi.php">Silent office </a></td>
+  <td><a href="resi.php">Co-working Office</a></td>
+  </tr>
+  
+  </table>
+</div>
+
 <div class="buy" ><center><img src="image/buyhouse.jpg" alt="buy" id="buy"></center></div>
 <div class="sell"><a href="regis.php"><center><img src="image/sellrent3.jpg" alt="sellrent" id="sell"></center></a></div>
 </section>

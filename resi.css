@@ -1,0 +1,27 @@
+body{
+	height:100%;
+	width: 100%;
+	background-color:grey;
+	margin:0px;
+	padding:0px;
+}
+.footcontainer{
+	padding:10px;
+}
+#map{
+	margin:15px;
+	width:200px;
+	height:200px;
+	background:yellow;
+}
+footer div a:link {
+	float:right;
+	font-size:30px;
+	margin-right:15px;
+    color: #ffd900;
+   
+}
+
+footer div a:hover {
+    color: red;
+}
