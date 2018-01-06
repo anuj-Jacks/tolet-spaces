@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 27, 2017 at 12:11 PM
+-- Generation Time: Jan 06, 2018 at 08:27 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -76,7 +76,13 @@ CREATE TABLE `property` (
 --
 
 INSERT INTO `property` (`uniqueid`, `Country`, `State`, `City`, `Locality`, `Housenum`, `Landmark`, `pincode`, `bhk`, `Area`, `Type`, `Budget`, `Oname`, `Oemail`, `Ocontact`, `floor`, `Furnishing`, `ResType`) VALUES
-(4, '', '', '', '0', '', '', 0, 0, 0, 'residential', 0, 'anuj', 'toletspaces@gmail.com', 2147483647, 0, '', '');
+(4, 'India', 'UP', 'Lucknow', 'Gomtinagar', '23', 'nearabout', 226010, 2, 1200, 'residential', 10200, 'anuj', 'toletspaces@gmail.com', 2147483647, 1, 'Semi furnished', 'family'),
+(5, 'India', 'UP', 'Lucknow', 'Gomtinagar extension', '45', 'verynear', 226010, 3, 1500, 'residential', 13000, 'random', 'thisone@random', 90909, 2, 'not furnished ', 'bachelor'),
+(6, 'India', 'UP', 'Lucknow', 'Gomtinagar extension', '345', 'verynear', 226010, 4, 1700, 'residential', 20000, 'rishabh', 'ptani@gmail', 45657483, 0, 'furnished', 'family'),
+(7, 'India', 'UP', 'Lucknow', 'Gomtinagar extension', '34', 'verynear', 226010, 0, 1500, 'commercial', 25000, 'amit', 'amit@gmail.com', 12345, 1, 'not furnished ', ''),
+(8, 'India', 'UP', 'Lucknow', 'Gomtinagar', '54', 'verynear', 226010, 3, 1600, 'residential', 15000, 'deepak', 'deepak@gmail.cvom', 123456, 14, 'semi furnished', 'family'),
+(9, 'India', 'UP', 'Lucknow', 'gomtinagar', '76', 'verynear', 226010, 0, 1000, 'commercial', 18000, 'yash', 'yash@gmail.com', 1234567, 0, 'furnished', ''),
+(10, 'India', 'UP', 'Lucknow', 'Gomtinagar extension', '34', 'verynear', 226010, 3, 1400, 'residential', 12000, 'sud', 'sud@gmail.com', 12345678, 2, 'not furnished ', 'bachelor');
 
 --
 -- Indexes for dumped tables
@@ -108,7 +114,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `property`
 --
 ALTER TABLE `property`
-  MODIFY `uniqueid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `uniqueid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

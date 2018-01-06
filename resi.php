@@ -6,9 +6,11 @@ if(isset($_POST['search']))
 	if($_POST['valueToSearch']==!"")
 	{
     $valueToSearch = $_POST['valueToSearch'];
-    $query = "SELECT * FROM property WHERE Oname LIKE '%".$valueToSearch."%'";
-	$query = "SELECT * FROM property WHERE Locality LIKE '%".$valueToSearch."%'";
-	$query = "SELECT * FROM property WHERE bhk LIKE '%".$valueToSearch."%'";
+	$area = $_POST['area'];
+	$bhkkk = $_POST['bhkkk'];
+   
+	$query = "SELECT * FROM property WHERE (Locality LIKE '%".$area."%') AND (bhk LIKE '%".$bhkkk."%') AND (Budget <= $valueToSearch) ";
+	
     $search_result = filterTable($query);
 	}
 	else {
@@ -69,16 +71,22 @@ function filterTable($query)
 			
 			
 		
-            <input type="text" name="valueToSearch" placeholder="Value To Search">
-			<select name="valueToSearch">
+            
+			<select name="area">
 				<option  value="Gomtinagar">Gomtinagar</option>
 				<option  value="GomtinagarEX">Gomtinagar Extension</option>
 				<option  value="hazratganj">Hazaratganj</option>
             </select>
-			<select name="valueToSearch">
+			<select name="bhkkk">
 				<option  value="2">2 BHK</option>
 				<option  value="3">3 BHK</option>
 				<option  value="4">4 BHK</option>
+            </select>
+			<select name="valueToSearch">
+				<option  value="10000"><10,000</option>
+				<option  value="15000">10,000-15000</option>
+				<option  value="20000">15,000-20,000</option>
+				<option  value="20000">>20,000</option>
             </select>
 			<br><br>
             <input type="submit" name="search" value="Filter"><br><br>
